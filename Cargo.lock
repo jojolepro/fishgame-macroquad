@@ -267,7 +267,6 @@ dependencies = [
 [[package]]
 name = "nakama_rs"
 version = "0.1.0"
-source = "git+https://github.com/jojolepro/nakama_rs#a965b38a127e704e4cb2e230fc0d33160e79d66a"
 
 [[package]]
 name = "nakama_sdk"

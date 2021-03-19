@@ -144,13 +144,14 @@ mod nakama {
         tick();
         println!("Ensure RtClient connected.");
         assert!(RT_CLIENT.lock().unwrap().as_mut().unwrap().is_connected());
-
+        tick();
         RT_CLIENT.lock().unwrap().as_mut().unwrap().match_make();
         tick();
         std::thread::sleep(std::time::Duration::from_millis(1000));
         tick();
-        println!("Ensuring we are in a match.");
+        //println!("Ensuring we are in a match.");
         //assert!(MATCH.lock().unwrap().is_some());
+        tick();
     }
 
     pub fn self_id() -> String {
